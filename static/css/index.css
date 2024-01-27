@@ -17,10 +17,65 @@ body {
   font-variant: small-caps;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 4 columns */
+  grid-template-rows: repeat(2, auto); /* Creates 2 rows */
+  gap: 10px; /* Space between grid items */
+}
 
+.grid-item video {
+  width: 100%; /* Make video fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.results-carousel .item {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center the text */
+}
+
+.results-carousel .item img {
+  display: block; /* Ensure images are block-level */
+  margin: 0 auto; /* Center images */
+  max-width: 100%; /* Adjust the size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between images */
+}
+
+
+.side-by-side-images {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.side-by-side-images img {
+  width: 700px; /* Fixed width */
+  height: 550px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-right: 10px; /* Space between the images */
+}
+
+.side-by-side-images img:last-child {
+  margin-right: 0; /* Removes margin from the last image */
+}
+
+.spacing {
+  margin-top: 20px; /* Adjust the space as needed */
+}
+.video-title {
+  text-align: center;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.2em; /* Smaller font size */
+  margin-bottom: 10px; /* Space between title and video */
+}
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .teaser {

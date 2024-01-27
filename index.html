@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Ev-Airborne</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,21 +52,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Motion Segmentation for Neuromorphic Airborne Surveillance</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <a href="https://samiarja.com/" target="_blank">Sami Arja</a>, TBD</span>
+
+                <!-- <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  </span> -->
+
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Western Sydney University<br>ECCV 2024 (Not submitted yet)</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,8 +84,19 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+
                     <span class="link-block">
+                      <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supp</span>
+                    </a>
+                  </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,7 +104,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -104,14 +117,25 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+
                 <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -122,24 +146,62 @@
   </div>
 </section>
 
+<section class="tldr">
+  <div class="container is-max-desktop">
+    <p>
+      <strong>TL;DR:</strong> How can we detect any moving target from an airborne platform using only motion cues? We develop a network that detect any salient object regardless its shape and appearance and estimate its motion without the need of any human labelling, relying purely on self-supervised features from Vision Transformers (ViT) and optical flow.
+    </p>
+  </div>
+</section>
+
+<!-- Spacing -->
+<div class="spacing"></div>
+
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+    <div class="grid-container">
+      <!-- Repeat this for each video in the grid -->
+      <div class="grid-item">
+        <div class="video-title">Moving SUV low oblique</div>
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut3_input_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item">
+        <div class="video-title">Airplane takeoff</div>
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut_input_vid_test.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item">
+        <div class="video-title">Big cars low oblique</div>
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_input_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item">
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut3_motion_segmentation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item">
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut_motion_segmentation_test.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item">
+        <video autoplay controls muted loop>
+          <source src="static/videos/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_motion_segmentation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Repeat 7 more times for a total of 8 videos -->
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
+<!-- End teaser video -->
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -148,102 +210,236 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The rapid emergence of airborne platforms is enabling new forms of aerial surveillance, which offers significant advantages in terms of scale, manoeuvrability, deployment speed, and vulnerabilities. These platforms play a vital role in areas such as aerial monitoring of specific targets, sites, or activities and information gathering. However, conventional vision sensors often struggle in rapidly changing environments due to the bandwidth-latency tradeoffs. High frame rates require large bandwidth and lower frame rates can cause significant delays, making them less effective, especially on platforms with limited resources. To address this, we explore the use of event cameras that can overcome such limitations. In this work, we use a high-resolution event camera onboard an airborne platform. We develop a novel unsupervised approach for motion segmentation of any moving object, eliminating the need for manual labelling. We tested our approach on various datasets, showcasing its ability to handle different types of motion and various numbers of moving objects effectively. The evaluation shows state-of-the-art results compared with existing approaches.
           </p>
         </div>
       </div>
     </div>
   </div>
+  <!-- Image below abstract -->
+  <div class="image-container" style="text-align:center; margin-top:20px;">
+    <div class="video-title">Prophesee Gen4 camera (1280x720) on an airborne platform</div>
+    <img src="static/images/airborne.png" alt="Event Camera on Drone" style="max-width:45%; height:auto;">
+  </div>
 </section>
 <!-- End paper abstract -->
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Title moved above the image container -->
+      <h2 class="title is-3">Network Architecture</h2>
+      <div class="image-container" style="text-align:center; margin-top:10px;">
+        <img src="static/images/motion_seg_architectureV6.png" alt="Image ALT TEXT" style="max-width: 50%; height: auto;"/>
+        <div class="video-title">Output of the network at every processing step</div>
+        <img src="static/videos/motion_segmentation_network_EV-IMO_box_seq_01.gif" alt="GIF ALT TEXT" style="max-width: 50%; height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/motion_seg_architectureV6.png" alt="Image ALT TEXT"/>
+          <img src="static/videos/motion_segmentation_network_EV-IMO_box_seq_01.gif" alt="GIF ALT TEXT"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
 
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Results on public dataset (EED, EV-IMO, EV-IMO2, DistSurf, HKUST-EMS)</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <div class="item">
+          <!-- Container for side-by-side images -->
+          
+
+          <div class="side-by-side-images">
+            <img src="static/videos/EV-IMO_box_seq_01_input_vid.gif" alt="First GIF ALT TEXT"/>
+            <img src="static/videos/EV-IMO_box_seq_01_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            EV-IMO box_seq_01
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-IMO_wall_seq_03_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-IMO_wall_seq_03_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          EV-IMO wall_seq_03
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-IMO_tabletop_seq_03_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-IMO_tabletop_seq_03_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
         <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
+          EV-IMO tabletop_seq_03
      </div>
      <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <div class="side-by-side-images">
+        <img src="static/videos/EV-IMO_table_seq_01_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/EV-IMO_table_seq_01_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+        EV-IMO table_seq_01
     </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/DistSurf_hand_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/DistSurf_hand_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        DistSurf hand
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/HKUST_EMS_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/HKUST_EMS_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HKUST-EMS cast
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/HKUST-EMS_corridor_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/HKUST-EMS_corridor_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HKUST-EMS corridor
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EV-IMO2_scene13_dyn_test_03_000000_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/EV-IMO2_scene13_dyn_test_03_000000_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EV-IMO2 scene13_dyn_test_03
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EV-Airborne_scene15_dyn_test_03_000000_input_vid.gif" alt="First GIF ALT TEXT"/>
+        <img src="static/videos/EV-Airborne_scene15_dyn_test_03_000000_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EV-IMO2 scene15_dyn_test_03
+    </div>
+
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EED_light_variations_input_vid.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+        <img src="static/videos/EED_light_variations_motion_segmentation.gif" alt="Second GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EED light_variations
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EED_what_is_background_input_vid.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+        <img src="static/videos/EED_what_is_background_motion_segmentation.gif" alt="Second GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EED what_is_background
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EED_occlusions_input_vid.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+        <img src="static/videos/EED_occlusions_motion_segmentation.gif" alt="Second GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EED occlusions
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/EED_fast_drone_input_vid.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+        <img src="static/videos/EED_fast_drone_motion_segmentation.gif" alt="Second GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        EED occlusions
+    </div>
+
+    <div class="item">
+      <div class="side-by-side-images">
+        <img src="static/videos/DistSurf_car_motion_segmentation.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        DistSurf car
+    </div>
+
+
   </div>
 </div>
 </div>
 </section>
+
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Results on Ev-Airborne dataset</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -251,16 +447,128 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results on EV-Airborne dataset</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Container for side-by-side images -->
+          
+          <div class="side-by-side-images">
+            <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut2_input_vid.gif" alt="First GIF ALT TEXT"/>
+            <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut2_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Airplane takeoff 1
+        </h2>
+      </div>
 
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Airplane takeoff 2
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/highway_input.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/highway_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Small cars low oblique
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Big cars low oblique
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-14-21_cut_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-14-21_cut_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Small cars high oblique
+        </h2>
+      </div>
+
+      
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut3_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut3_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Moving SUV low oblique
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Golf car high oblique
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut2_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut2_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Moving car low oblique
+        </h2>
+      </div>
+
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut4_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut4_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Moving SUV/Dome
+        </h2>
+      </div>
+
+      <div class="item">
+        <div class="side-by-side-images">
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut5_input_vid.gif" alt="First GIF ALT TEXT"/>
+          <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut5_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Pedesterians
+        </h2>
+      </div>
+
+  </div>
+</div>
+</div>
+</section>
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +578,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +586,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>Coming soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
