@@ -46,6 +46,9 @@ body {
 }
 
 
+
+
+
 .side-by-side-images {
   display: flex; /* Enable Flexbox */
   justify-content: center; /* Center items horizontally */
@@ -53,13 +56,31 @@ body {
 }
 
 .side-by-side-images img {
+  width: calc(33% - 10px); /* Adjusted width */
+  height: 750px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-right: 10px; /* Space between the images */
+}
+
+.side-by-side-images img:last-child {
+  margin-right: 0; /* Removes margin from the last image */
+}
+
+.side-by-side-images2 {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically in the center */
+}
+
+
+.side-by-side-images2 img {
   width: 700px; /* Fixed width */
   height: 550px; /* Fixed height */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   margin-right: 10px; /* Space between the images */
 }
 
-.side-by-side-images img:last-child {
+.side-by-side-images2 img:last-child {
   margin-right: 0; /* Removes margin from the last image */
 }
 
