@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Motion Segmentation for Neuromorphic Airborne Surveillance</h1>
+            <h1 class="title is-1 publication-title">Unsupervised Motion Segmentation for Neuromorphic Aerial Surveillance</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -209,26 +209,249 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Airborne platforms offer unique perspectives and capabilities for monitoring specific targets, or activities and information gathering. Due to the fast-paced and dynamic nature of airborne platforms conventional vision sensors often suffer from bandwidth-latency tradeoffs: high frame rates demand high bandwidth, and low frame rates introduce delays, reducing effectiveness in resource-constrained platforms. To address this, we explore the use of biologically inspired vision sensors known as event cameras that can overcome such limitations. In this work, we use an event camera with HD resolution onboard an airborne platform and introduce a novel unsupervised technique to enable robust event-based motion segmentation of any moving object from a highly dynamic platform, without the need for manual labelling. We tested our approach on various datasets, showcasing its ability to handle different types of motion and various numbers of moving objects effectively. We extensively evaluate our framework and showcase state-of-the-art performance compared to existing works.          </p>
-        </div>
+            Achieving optimal performance with frame-based vision sensors on aerial platforms poses a significant challenge due to the fundamental tradeoffs between bandwidth and latency. Event cameras, which draw inspiration from biological vision systems, present a promising alternative due to their exceptional temporal resolution, superior dynamic range, and minimal power requirements. Due to these properties, they are well-suited for processing and segmenting fast motions that require rapid reactions. However, previous methods for event-based motion segmentation encountered limitations, such as the need for per-scene parameter tuning or manual labelling to achieve satisfactory results. To overcome these issues, our proposed method leverages features from self-supervised transformers on both event data and optical flow information, eliminating the need for human annotations and reducing the parameter tuning problem. In this paper, we use an event camera with HD resolution onboard a highly dynamic aerial platform in an urban setting. We conduct extensive evaluations of our framework across multiple datasets, demonstrating state-of-the-art performance compared to existing works. Our method can effectively handle various types of motion and an arbitrary number of moving objects.        </div>
       </div>
     </div>
   </div>
   <!-- Image below abstract -->
   <div class="image-container" style="text-align:center; margin-top:20px;">
-    <div class="video-title">Prophesee Gen4 camera (1280x720) on an airborne platform</div>
-    <img src="static/images/project_diagram.png" alt="Event Camera on Drone" style="max-width:45%; height:auto;">
+    <div class="video-title">Prophesee Gen4 camera (1280x720) on a small airplane platform</div>
+    <img src="static/images/airborne_setup.png" alt="Event Camera on Drone" style="max-width:45%; height:auto;">
   </div>
 </section>
 <!-- End paper abstract -->
 
+
+<!-- <h2 style="text-align: center; margin-top: 20px; font-size: 44px; text-decoration: underline;">Comparison with EMSGC method</h2> -->
+<h2 class="title is-3">Comparison with EMSGC method</h2>
+
+<div class="mainSection">
+  <div id="one" class="bal-container">
+      <div class="bal-after">
+          <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut3_5_1050000.0.png">
+          <div class="bal-afterPosition afterLabel">
+              Ours
+          </div>
+      </div>
+
+      <div class="bal-before">
+          <div class="bal-before-inset">
+              <img src="static/images/closeup_0000_modified.png">
+              <div class="bal-beforePosition beforeLabel">
+                  EMSGC
+              </div>
+          </div>
+      </div>
+
+      <div class="bal-handle">
+          <span class=" handle-left-arrow"></span>
+          <span class="handle-right-arrow"></span>
+      </div>
+
+  </div>
+
+  <div id="two" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut4_3000000.0.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/dome_0021_modified.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+
+  <div id="three" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut_4_1100000.0.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/golfcar_0088_modified.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+</div>
+
+<!-- Second row -->
+<div class="mainSection">
+  <div id="four" class="bal-container">
+      <div class="bal-after">
+          <img src="static/images/000002_350003_EV-Airborne_recording_2023-04-26_14-54-52_cut4_modified.png">
+          <div class="bal-afterPosition afterLabel">
+              Ours
+          </div>
+      </div>
+
+      <div class="bal-before">
+          <div class="bal-before-inset">
+              <img src="static/images/highway_2_0059_modified.png">
+              <div class="bal-beforePosition beforeLabel">
+                  EMSGC
+              </div>
+          </div>
+      </div>
+
+      <div class="bal-handle">
+          <span class=" handle-left-arrow"></span>
+          <span class="handle-right-arrow"></span>
+      </div>
+
+  </div>
+
+  <div id="five" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/000028_4350002_EV-Airborne_recording_2023-04-26_14-53-22_cut_bbox.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/plane_0072_bbox.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+
+  <div id="six" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/000127_6600000_EV-Airborne_recording_2023-04-26_15-14-21_cut_bbox.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/highway_0073_bbox.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+</div>
+
+
+
+<!-- Third row -->
+<div class="mainSection">
+  <div id="seven" class="bal-container">
+      <div class="bal-after">
+          <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut5_1050000.0.png">
+          <div class="bal-afterPosition afterLabel">
+              Ours
+          </div>
+      </div>
+
+      <div class="bal-before">
+          <div class="bal-before-inset">
+              <img src="static/images/recording_2023-04-26_15-30-21_cut5_120_det_100.0.png">
+              <div class="bal-beforePosition beforeLabel">
+                  EMSGC
+              </div>
+          </div>
+      </div>
+
+      <div class="bal-handle">
+          <span class=" handle-left-arrow"></span>
+          <span class="handle-right-arrow"></span>
+      </div>
+
+  </div>
+
+  <div id="eight" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut2_11_1950000.0_1.0.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/neighbors_0008_bbox.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+
+  <div id="nine" class="bal-container">
+    <div class="bal-after">
+      <img src="static/images/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_4500000.0_0.8.png">
+      <div class="bal-afterPosition afterLabel">
+          Ours
+      </div>
+  </div>
+
+  <div class="bal-before">
+      <div class="bal-before-inset">
+          <img src="static/images/car_0363_bbox_resized.png">
+          <div class="bal-beforePosition beforeLabel">
+              EMSGC
+          </div>
+      </div>
+  </div>
+
+  <div class="bal-handle">
+      <span class=" handle-left-arrow"></span>
+      <span class="handle-right-arrow"></span>
+  </div>
+  </div>
+</div>
 
 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Title moved above the image container -->
-      <h2 class="title is-3">Network Architecture</h2>
+      <h2 class="title is-3">Motion Segmentation Architecture</h2>
       <div class="image-container" style="text-align:center; margin-top:10px;">
         <img src="static/images/motion_seg_architectureV7.png" alt="Image ALT TEXT" style="max-width: 50%; height: auto;"/>
         <div class="video-title">Output of the network at every processing step</div>
@@ -259,6 +482,10 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Results on public dataset (EED, EV-IMO, EV-IMO2, DistSurf, HKUST-EMS)</h2>
+      <div class="columns titles">
+        <div class="column has-text-centered">Input</div>
+        <div class="column has-text-centered our-title">Output</div>
+      </div>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Container for side-by-side images -->
@@ -453,6 +680,11 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Results on EV-Airborne dataset</h2>
+      <div class="columns titles">
+        <div class="column has-text-centered">Input</div>
+        <div class="column has-text-centered">Output - EMSGC</div>
+        <div class="column has-text-centered our-title">Output - Ours</div>
+      </div>
       <div id="results-carousel" class="carousel results-carousel">
         
         <div class="item">          
@@ -462,7 +694,7 @@
             <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut2_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
           </div>
           <h2 class="subtitle has-text-centered">
-            Airplane takeoff 1 (Input events - EMSGC - Ours)
+            Airplane takeoff 1
         </h2>
       </div>
 
@@ -473,7 +705,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_14-53-22_cut_motion_segmentation.gif" alt="Third GIF ALT TEXT"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          Airplane takeoff 2 (Input events - EMSGC - Ours)
+          Airplane takeoff 2
         </h2>
       </div>
 
@@ -484,7 +716,7 @@
           <img src="static/videos/highway_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Small cars low oblique (Input events - EMSGC - Ours)
+          Small cars low oblique
         </h2>
       </div>
 
@@ -495,7 +727,7 @@
           <img src="static/videos/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Big cars low oblique (Input events - EMSGC - Ours)
+          Big cars low oblique
         </h2>
       </div>
 
@@ -506,7 +738,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-14-21_cut_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Small cars high oblique (Input events - EMSGC - Ours)
+          Small cars high oblique
         </h2>
       </div>
 
@@ -518,7 +750,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut3_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Moving SUV low oblique (Input events - EMSGC - Ours)
+          Moving SUV low oblique
         </h2>
       </div>
 
@@ -529,7 +761,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Golf car high oblique (Input events - EMSGC - Ours)
+          Golf car high oblique
         </h2>
       </div>
 
@@ -540,7 +772,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut2_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Moving car low oblique (Input events - EMSGC - Ours)
+          Moving car low oblique
         </h2>
       </div>
 
@@ -552,7 +784,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut4_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Moving SUV/Dome (Input events - EMSGC - Ours)
+          Moving SUV/Dome
         </h2>
       </div>
 
@@ -563,7 +795,7 @@
           <img src="static/videos/EV-Airborne_recording_2023-04-26_15-30-21_cut5_motion_segmentation.gif" alt="Third GIF ALT TEXT"/> 
         </div>
         <h2 class="subtitle has-text-centered">
-          Pedesterians (Input events - EMSGC - Ours)
+          Pedesterians
         </h2>
       </div>
 
@@ -572,7 +804,70 @@
 </div>
 </section>
 
+<script>
 
+  function switchImages(rowId) {
+      // This selector targets images directly within an .images-container,
+      // whether or not they're in an .image-container div.
+      const images = document.querySelectorAll(`.row[data-row-id="${rowId}"] .images-container img`);
+      
+      images.forEach(img => {
+          let currentSrc = img.getAttribute('src');
+          let altSrc = img.getAttribute('data-alt-src');
+          
+          img.setAttribute('src', altSrc);
+          img.setAttribute('data-alt-src', currentSrc);
+      });
+  }
+
+
+  new BeforeAfter({
+      id: '#one'
+  });
+  new BeforeAfter({
+      id: '#two'
+  });
+  new BeforeAfter({
+      id: '#three'
+  });
+  new BeforeAfter({
+      id: '#four'
+  });
+  new BeforeAfter({
+      id: '#five'
+  });
+  new BeforeAfter({
+      id: '#six'
+  });
+  new BeforeAfter({
+      id: '#seven'
+  });
+  new BeforeAfter({
+      id: '#eight'
+  });
+  new BeforeAfter({
+      id: '#nine'
+  });
+  new BeforeAfter({
+      id: '#ten'
+  });
+  new BeforeAfter({
+      id: '#eleven'
+  });
+  new BeforeAfter({
+      id: '#twelve'
+  });
+  new BeforeAfter({
+      id: '#thirteen'
+  });
+  new BeforeAfter({
+      id: '#fourteen'
+  });
+  new BeforeAfter({
+      id: '#fifteen'
+  });
+  
+</script>
 
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
