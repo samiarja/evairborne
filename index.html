@@ -81,7 +81,7 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Pre-print</span>
                       </a>
                     </span>
 
@@ -202,7 +202,7 @@
 
 <!-- End teaser video -->
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -213,12 +213,45 @@
       </div>
     </div>
   </div>
-  <!-- Image below abstract -->
+
   <div class="image-container" style="text-align:center; margin-top:20px;">
     <div class="video-title">Prophesee Gen4 camera (1280x720) on a small airplane platform</div>
     <img src="static/images/airborne_setup.png" alt="Event Camera on Drone" style="max-width:45%; height:auto;">
   </div>
+</section> -->
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Abstract Column -->
+      <div class="column is-half">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Achieving optimal performance with frame-based vision sensors on aerial platforms poses a significant challenge due to the fundamental tradeoffs between bandwidth and latency. Event cameras, which draw inspiration from biological vision systems, present a promising alternative due to their exceptional temporal resolution, superior dynamic range, and minimal power requirements. Due to these properties, they are well-suited for processing and segmenting fast motions that require rapid reactions. However, previous methods for event-based motion segmentation encountered limitations, such as the need for per-scene parameter tuning or manual labelling to achieve satisfactory results. To overcome these issues, our proposed method leverages features from self-supervised transformers on both event data and optical flow information, eliminating the need for human annotations and reducing the parameter tuning problem. In this paper, we use an event camera with HD resolution onboard a highly dynamic aerial platform in an urban setting. We conduct extensive evaluations of our framework across multiple datasets, demonstrating state-of-the-art performance compared to existing works. Our method can effectively handle various types of motion and an arbitrary number of moving objects.
+          </p>
+        </div>
+      </div>
+      <!-- Image and Video Column -->
+      <div class="column is-half">
+        <div class="image-container" style="text-align:center;">
+          <img src="static/images/motion_seg_architectureV7.png" alt="Image ALT TEXT" style="max-width: 100%; height: auto;; margin-top: 110px;">
+          <div class="video-title">Output of the network at every processing step</div>
+          <img src="static/videos/motion_segmentation_network_EV-IMO_box_seq_01.gif" alt="GIF ALT TEXT" style="max-width: 100%; height: auto;"/>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image below all content -->
+    <div class="image-container" style="text-align:center; margin-top:20px;">
+      <div class="video-title">A Prophesee Gen4 camera (1280x720) is mounted on a small airplane pointing downward</div>
+      <img src="static/images/airborne_setup.png" alt="Event Camera on Drone" style="width: 50%; height:auto;">
+    </div>
+  </div>
 </section>
+
+
 <!-- End paper abstract -->
 
 
@@ -228,7 +261,7 @@
 <div class="mainSection">
   <div id="one" class="bal-container">
       <div class="bal-after">
-          <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut3_5_1050000.0.png">
+          <img src="static/images/30_21_cut3_wp_ours.png">
           <div class="bal-afterPosition afterLabel">
               Ours
           </div>
@@ -236,7 +269,7 @@
 
       <div class="bal-before">
           <div class="bal-before-inset">
-              <img src="static/images/closeup_0000_modified.png">
+              <img src="static/images/30_21_cut3_wp_emsgc.png">
               <div class="bal-beforePosition beforeLabel">
                   EMSGC
               </div>
@@ -252,7 +285,7 @@
 
   <div id="two" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut4_3000000.0.png">
+      <img src="static/images/30_21_cut4_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -260,7 +293,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/dome_0021_modified.png">
+          <img src="static/images/30_21_cut4_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -275,7 +308,7 @@
 
   <div id="three" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut_4_1100000.0.png">
+      <img src="static/images/30_21_cut_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -283,7 +316,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/golfcar_0088_modified.png">
+          <img src="static/images/30_21_cut_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -302,7 +335,7 @@
 <div class="mainSection">
   <div id="four" class="bal-container">
       <div class="bal-after">
-          <img src="static/images/000002_350003_EV-Airborne_recording_2023-04-26_14-54-52_cut4_modified.png">
+          <img src="static/images/52_54_wp_ours.png">
           <div class="bal-afterPosition afterLabel">
               Ours
           </div>
@@ -310,7 +343,7 @@
 
       <div class="bal-before">
           <div class="bal-before-inset">
-              <img src="static/images/highway_2_0059_modified.png">
+              <img src="static/images/52_54_wp_emsgc.png">
               <div class="bal-beforePosition beforeLabel">
                   EMSGC
               </div>
@@ -326,7 +359,7 @@
 
   <div id="five" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/000028_4350002_EV-Airborne_recording_2023-04-26_14-53-22_cut_bbox.png">
+      <img src="static/images/53_22_cut_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -334,7 +367,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/plane_0072_bbox.png">
+          <img src="static/images/53_22_cut_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -349,7 +382,7 @@
 
   <div id="six" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/000127_6600000_EV-Airborne_recording_2023-04-26_15-14-21_cut_bbox.png">
+      <img src="static/images/14_21_cut_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -357,7 +390,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/highway_0073_bbox.png">
+          <img src="static/images/14_21_cut_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -377,7 +410,7 @@
 <div class="mainSection">
   <div id="seven" class="bal-container">
       <div class="bal-after">
-          <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut5_1050000.0.png">
+          <img src="static/images/30_21_cut5_wp_ours.png">
           <div class="bal-afterPosition afterLabel">
               Ours
           </div>
@@ -385,7 +418,7 @@
 
       <div class="bal-before">
           <div class="bal-before-inset">
-              <img src="static/images/recording_2023-04-26_15-30-21_cut5_120_det_100.0.png">
+              <img src="static/images/30_21_cut5_wp_emsgc.png">
               <div class="bal-beforePosition beforeLabel">
                   EMSGC
               </div>
@@ -401,7 +434,7 @@
 
   <div id="eight" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/EV-Airborne_recording_2023-04-26_15-30-21_cut2_11_1950000.0_1.0.png">
+      <img src="static/images/30_21_cut2_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -409,7 +442,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/neighbors_0008_bbox.png">
+          <img src="static/images/30_21_cut2_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -424,7 +457,7 @@
 
   <div id="nine" class="bal-container">
     <div class="bal-after">
-      <img src="static/images/EV-Airborne_congenial-turkey-b1-54-e2-00_cars_4500000.0_0.8.png">
+      <img src="static/images/highway_wp_ours.png">
       <div class="bal-afterPosition afterLabel">
           Ours
       </div>
@@ -432,7 +465,7 @@
 
   <div class="bal-before">
       <div class="bal-before-inset">
-          <img src="static/images/car_0363_bbox_resized.png">
+          <img src="static/images/highway_wp_emsgc.png">
           <div class="bal-beforePosition beforeLabel">
               EMSGC
           </div>
@@ -447,10 +480,9 @@
 </div>
 
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Title moved above the image container -->
       <h2 class="title is-3">Motion Segmentation Architecture</h2>
       <div class="image-container" style="text-align:center; margin-top:10px;">
         <img src="static/images/motion_seg_architectureV7.png" alt="Image ALT TEXT" style="max-width: 50%; height: auto;"/>
@@ -459,7 +491,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- <section class="hero is-small">
@@ -543,14 +575,14 @@
         HKUST-EMS cast
     </div>
 
-    <div class="item">
+    <!-- <div class="item">
       <div class="side-by-side-images2">
         <img src="static/videos/HKUST-EMS_corridor_input_vid.gif" alt="First GIF ALT TEXT"/>
         <img src="static/videos/HKUST-EMS_corridor_motion_segmentation.gif" alt="Second GIF ALT TEXT"/>
       </div>
       <h2 class="subtitle has-text-centered">
         HKUST-EMS corridor
-    </div>
+    </div> -->
 
     <div class="item">
       <div class="side-by-side-images2">
@@ -604,16 +636,16 @@
         <img src="static/videos/EED_fast_drone_motion_segmentation.gif" alt="Second GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
       </div>
       <h2 class="subtitle has-text-centered">
-        EED occlusions
+        EED fast_drone
     </div>
 
-    <div class="item">
+    <!-- <div class="item">
       <div class="side-by-side-images2">
         <img src="static/videos/DistSurf_car_motion_segmentation.gif" alt="First GIF ALT TEXT" style="max-width: 150%; height: auto;"/>
       </div>
       <h2 class="subtitle has-text-centered">
         DistSurf car
-    </div>
+    </div> -->
 
 
   </div>
@@ -623,7 +655,10 @@
 
 <!-- End image carousel -->
 
-
+<div class="image-container" style="text-align:center; margin-top:20px;">
+  <img src="static/images/open_source_dataset_results.png" alt="Event Camera on Drone" style="max-width:95%; height:auto;">
+</div>
+</section>
 
 
 <!-- Youtube video -->
@@ -676,7 +711,7 @@
 <!-- End video carousel -->
 
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Results on EV-Airborne dataset</h2>
@@ -802,7 +837,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
 <script>
 
