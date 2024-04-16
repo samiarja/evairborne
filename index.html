@@ -226,17 +226,21 @@
     <div class="columns is-centered">
       <!-- Abstract Column -->
       <div class="column is-half">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Summary of the paper</h2>
         <div class="content has-text-justified">
-          <p>
+          <!-- <p>
             Achieving optimal performance with frame-based vision sensors on aerial platforms poses a significant challenge due to the fundamental tradeoffs between bandwidth and latency. Event cameras, which draw inspiration from biological vision systems, present a promising alternative due to their exceptional temporal resolution, superior dynamic range, and minimal power requirements. Due to these properties, they are well-suited for processing and segmenting fast motions that require rapid reactions. However, previous methods for event-based motion segmentation encountered limitations, such as the need for per-scene parameter tuning or manual labelling to achieve satisfactory results. To overcome these issues, our proposed method leverages features from self-supervised transformers on both event data and optical flow information, eliminating the need for human annotations and reducing the parameter tuning problem. In this paper, we use an event camera with HD resolution onboard a highly dynamic aerial platform in an urban setting. We conduct extensive evaluations of our framework across multiple datasets, demonstrating state-of-the-art performance compared to existing works. Our method can effectively handle various types of motion and an arbitrary number of moving objects.
+          </p> -->
+          <p>
+            Frame-based vision sensors on aerial platforms face bandwidth-latency challenges. On the contrary, event cameras offer promise with their high temporal resolution and low power needs. Existing methods for event-based motion segmentation often require manual labeling or scene-specific parameter tuning. Our approach addresses these issues by employing self-supervised transformers on event data and optical flow, eliminating the need for human annotations and reducing parameter tuning. We evaluate our method extensively on diverse datasets using an HD event camera on a dynamic aerial platform in urban settings, demonstrating superior performance compared to existing methods in handling various motion types and multiple moving objects
           </p>
         </div>
       </div>
       <!-- Image and Video Column -->
       <div class="column is-half">
         <div class="image-container" style="text-align:center;">
-          <img src="static/images/motion_seg_architectureV7.png" alt="Image ALT TEXT" style="max-width: 100%; height: auto;; margin-top: 110px;">
+          <img src="static/images/motion_seg_architectureV7.png" alt="Image ALT TEXT" style="max-width: 100%; height: auto;; margin-top: 0px;">
+
           <div class="video-title">Output of the network at every processing step</div>
           <img src="static/videos/motion_segmentation_network_EV-IMO_box_seq_01.gif" alt="GIF ALT TEXT" style="max-width: 100%; height: auto;"/>
         </div>
